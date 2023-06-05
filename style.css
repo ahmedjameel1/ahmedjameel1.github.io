@@ -1,0 +1,149 @@
+/* Place your CSS styles in this file */
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  background-image: url("https://images.unsplash.com/photo-1562907550-096d3bf9b25c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80");
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: auto;
+   margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2, h3 , h4{
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+.all-info {
+    width: 50%;
+    margin: auto;
+}
+
+.about {
+    font-family: "Lato", sans-serif;
+    padding: 10px;
+    margin: 3px;
+    color: white;
+    border-left: 3px white solid;
+    background-color: rgba(51, 51, 51, 0.589);
+    backdrop-filter: blur(4px);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s;
+  float: right;
+}
+
+.opened {
+  transform: rotate(90deg);
+  transition: transform 0.5s ease;
+}
+
+.about {
+  cursor: pointer;
+}
+
+.about:hover {
+  cursor: pointer;
+  /* Add additional styling for hover effect if needed */
+}
+
+
+.p {
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+  opacity: 1;
+}
+
+
+ul {
+  list-style: none;
+}
+
+div.hidden {
+    display: none;
+}
+
+div {
+  padding: 10px;
+}
+
+.dotted {
+  list-style: decimal-leading-zero;
+}
+
+a {
+  width: 50px;
+}
+
+
+.social-media-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .social-media-list li {
+      margin: 0 5px;
+    }
+
+    .social-media-list img {
+      width: 30px;
+      height: 30px;
+    }
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery-container img {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gallery-container {
+  width: 95%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.gallery {
+  display: inline-flex;
+}
+
+.gallery a {
+  width: 100%;
+  height: 200px;
+  margin: 5px;
+}
+
+.container {
+  max-height: 100vh;
+  overflow: auto;
+}
+
