@@ -16,19 +16,7 @@ maps.forEach(function(div) {
 });
 
 
-function incrementVisitorCount() {
-        axios
-          .get('https://api.countapi.xyz/hit/ahmedjameel1.github.io/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')
-          .then(function (response) {
-            document.getElementById('visitorCount').textContent = response.data.value;
-          })
-          .catch(function (error) {
-            console.error(error);
-          });
-      }
 
-      // Increment the visitor count on page load
-      window.addEventListener('DOMContentLoaded', incrementVisitorCount);
 
 
 
